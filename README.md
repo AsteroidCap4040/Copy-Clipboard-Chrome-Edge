@@ -50,6 +50,11 @@ Anyways, my extension **currently works quiet good on Edge & Chrome**.
 ## 🌟 Future Plans
 
 - Improve **Firefox compatibility** and get it signed 🦊✅  
-- Maybe add **cloud sync** to use your clipboard across devices ☁️  
+- Maybe add **cloud sync** to use your clipboard across devices ☁️
+
+---
+
+## Screenshots
+<img width="959" height="499" alt="Screenshot 2025-08-17 162143" src="https://github.com/user-attachments/assets/906fdbf0-19ae-4a69-a78d-3e2a9bb77ceb" />
 
 
