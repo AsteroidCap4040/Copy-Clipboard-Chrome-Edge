@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Clipboard Saver",
+  "version": "1.0",
+  "description": "Save multiple clipboard entries and reuse them.",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "permissions": [
+    "storage",
+    "clipboardWrite",
+    "clipboardRead"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    },
+    "default_title": "Clipboard Saver"
+  }
+}

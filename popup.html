@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Firefox Extension</title>
+  <style>
+    body {
+      width: 320px;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    .main-container {
+      padding: 12px;
+      border: 5px solid #333;
+      background-color: #fff;
+      border-radius: 0px;
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    h3 {
+      margin: 0 0 10px;
+      font-size: 16px;
+      color: #222;
+    }
+
+    .copied-box {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 7px;
+    }
+
+    textarea {
+      flex: 1;
+      resize: none;
+      padding: 6px;
+      font-size: 14px;
+      border: 1px solid #aaa;
+      border-radius: 6px;
+      outline: none;
+    }
+
+    textarea:focus {
+      border-color: #0078d7;
+      box-shadow: 0 0 3px #0078d7;
+    }
+
+    .icon-btn {
+      cursor: pointer;
+      padding: 4px;
+      border-radius: 6px;
+      transition: background-color 0.2s;
+    }
+
+    .icon-btn:hover {
+      background-color: #f0f0f0;
+    }
+
+    .icon-btn img {
+      width: 20px;
+      height: 20px;
+      display: block;
+    }
+
+    /* Toast notification */
+    .toast {
+      position: fixed;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #333;
+      color: #fff;
+      padding: 6px 12px;
+      font-size: 13px;
+      border-radius: 4px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+
+    .toast.show {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+  <h3>Copy Clipboard</h3>
+
+  <div class="copied-box">
+    <textarea class="copiedText" rows="1" placeholder="Type or paste text..."></textarea>
+    <div class="icon-btn copyBtn" title="Copy">
+      <img src="copy.png" alt="Copy">
+    </div>
+    <div class="icon-btn deleteBtn" title="Clear">
+      <img src="remove.png" alt="Delete">
+    </div>
+  </div>
+
+  <div class="copied-box">
+    <textarea class="copiedText" rows="1" placeholder="Type or paste text..."></textarea>
+    <div class="icon-btn copyBtn" title="Copy">
+      <img src="copy.png" alt="Copy">
+    </div>
+    <div class="icon-btn deleteBtn" title="Clear">
+      <img src="remove.png" alt="Delete">
+    </div>
+  </div>
+
+  <div class="copied-box">
+    <textarea class="copiedText" rows="1" placeholder="Type or paste text..."></textarea>
+    <div class="icon-btn copyBtn" title="Copy">
+      <img src="copy.png" alt="Copy">
+    </div>
+    <div class="icon-btn deleteBtn" title="Clear">
+      <img src="remove.png" alt="Delete">
+    </div>
+  </div>
+
+  <div class="copied-box">
+    <textarea class="copiedText" rows="1" placeholder="Type or paste text..."></textarea>
+    <div class="icon-btn copyBtn" title="Copy">
+      <img src="copy.png" alt="Copy">
+    </div>
+    <div class="icon-btn deleteBtn" title="Clear">
+      <img src="remove.png" alt="Delete">
+    </div>
+  </div>
+
+  <div class="copied-box">
+    <textarea class="copiedText" rows="1" placeholder="Type or paste text..."></textarea>
+    <div class="icon-btn copyBtn" title="Copy">
+      <img src="copy.png" alt="Copy">
+    </div>
+    <div class="icon-btn deleteBtn" title="Clear">
+      <img src="remove.png" alt="Delete">
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+  <!-- load external JS -->
+  <script src="popup.js"></script>
+</body>
+</html>
+
